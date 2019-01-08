@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+
+# Scrapy settings for fourd project
+#
+# For simplicity, this file contains only settings considered important or
+# commonly used. You can find more settings consulting the documentation:
+#
+#     http://doc.scrapy.org/en/latest/topics/settings.html
+#     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
+#     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
+
+BOT_NAME = 'fourd'
+
+SPIDER_MODULES = ['fourd.spiders']
+NEWSPIDER_MODULE = 'fourd.spiders'
+
+# Crawl responsibly by identifying yourself (and your website) on the user-agent
+USER_AGENT = 'Fourd'
+
+ITEM_PIPELINES = {
+    # Uncomment below pipeline if you want to insert into the MySQL
+    # Please run db_structure.sql first
+    # 'fourd.pipelines.FourdPipeline': 300
+}
+
+# Required if you are using the above pipeline to insert results to MySQL
+FOURD_DB_HOST = 'localhost'
+FOURD_DB_USER = 'root'
+FOURD_DB_PASSWORD = ''
+FOURD_DB_NAME = ''
