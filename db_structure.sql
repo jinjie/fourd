@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.5-10.2.10-MariaDB)
 # Database: fourd
-# Generation Time: 2019-01-08 04:58:07 +0000
+# Generation Time: 2019-01-13 10:07:06 +0000
 # ************************************************************
 
 
@@ -41,7 +41,7 @@ DROP TABLE IF EXISTS `numbers`;
 
 CREATE TABLE `numbers` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `number` int(11) DEFAULT NULL,
+  `number` varchar(4) DEFAULT NULL,
   `draw_no` int(11) DEFAULT NULL,
   `type` enum('FIRST','SECOND','THIRD','STARTER','CONSOLATION') DEFAULT NULL,
   PRIMARY KEY (`id`)
